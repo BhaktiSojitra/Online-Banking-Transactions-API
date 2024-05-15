@@ -1,0 +1,20 @@
+<button class="btn btn-outline-secondary m-3" routerLink="/insert">Add</button>
+
+<div class="row">
+  <div class="col-3  mb-4" *ngFor="let temp of data">
+    <div class="card">
+      <img
+        class="card-img-top"
+        [src]="temp.Image"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{"Name:- "+temp.Name }}</h5>
+        <h5 class="card-text">{{"TransactionID:- "+temp.TransactionID }}</h5>
+        <h5 class="card-text">{{"AccountID:- "+temp.AccountID }}</h5>
+        <button class="btn btn-outline-primary" style="margin-right: 10px;" routerLink="/getbyid/{{temp.TransactionID}}">View more</button>        
+        <button class="btn btn-outline-danger" (click)="delete(temp.TransactionID)">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

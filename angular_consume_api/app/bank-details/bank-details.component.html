@@ -1,0 +1,31 @@
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Image</th>
+        <th scope="col">TransactionID</th>
+        <th scope="col">AccountID</th>
+        <th scope="col">TransactionType</th>
+        <th scope="col">Amount</th>
+        <th scope="col">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ data.Name }}</td>
+        <td>{{ data.Image }}</td>
+        <td>{{ data.TransactionID }}</td>
+        <td>{{ data.AccountID }}</td>
+        <td>{{ data.TransactionType }}</td>
+        <td>{{ data.Amount }}</td>
+        <td>{{ data.Date }}</td>
+      </tr>
+      <tr></tr>
+    </tbody>
+  </table>
+  
+  <div class="text-center">
+      <button class="btn btn-outline-primary" style="margin-right: 10px;" routerLink="/getall">Back</button>
+      <button class="btn btn-outline-warning" style="margin-right: 10px;" routerLink="/update/{{data.TransactionID}}">Edit</button>
+      <button class="btn btn-outline-danger" (click)="delete(data.TransactionID)">Delete</button>
+  </div>

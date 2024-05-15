@@ -1,0 +1,44 @@
+<form [formGroup]="myForm">
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label mb-3">Name:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="Name" formControlName="Name"/>
+      </div>
+  
+      <label class="col-sm-2 col-form-label mb-3">Image:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="Image" formControlName="Image"/>
+      </div>
+  
+      <label class="col-sm-2 col-form-label mb-3">TransactionID:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="TransactionID" formControlName="TransactionID"/>
+      </div>
+  
+      <label class="col-sm-2 col-form-label mb-3">AccountID:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="AccountID" formControlName="AccountID"/>
+      </div>
+  
+      <label class="col-sm-2 col-form-label mb-3">TransactionType:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="TransactionType" formControlName="TransactionType"/>
+      </div>
+
+      <label class="col-sm-2 col-form-label mb-3">Amount:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="Amount" formControlName="Amount"/>
+      </div>
+
+      <label class="col-sm-2 col-form-label mb-3">Date:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="Date" formControlName="Date"/>
+      </div>
+  
+      <div class="col-sm-12 text-center">
+        <button class="btn btn-outline-secondary" type="button" (click)="add()">Add</button>
+      </div>
+  
+    </div>
+  </form>
+  
